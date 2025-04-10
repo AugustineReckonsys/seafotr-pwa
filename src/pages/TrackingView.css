@@ -6,7 +6,7 @@
 .map-top-border {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
     width: 100%;
     position: absolute;
     top: 0;
@@ -14,6 +14,7 @@
     padding: 20px;
     background-color: rgba(3, 35, 54, 0.6);
     box-sizing: border-box;
+    cursor: pointer;
 }
 
 .back-icon-container {

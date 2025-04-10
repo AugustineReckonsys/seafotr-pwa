@@ -4,19 +4,24 @@ import fishing_area_logo from "../assets/fishing_area_logo.svg";
 import location_logo from "../assets/location_logo.svg";
 import market_logo from "../assets/market_logo.svg";
 import species_logo from "../assets/species_logo.svg";
-
 import mapPlaceholder from "../assets/mapPlaceholder.jpg";
 import { DetailItem } from "../components/DetailItems";
 import { FaArrowLeft, FaInfoCircle } from "react-icons/fa";
-
 import "./TrackingView.css";
+import { useNavigate } from "react-router-dom";
 
 const TrackingView = () => {
+  const navigate = useNavigate();
+
+  const onGoBack = () => {
+    navigate("/");
+  };
+
   return (
     <section style={{ width: "100%" }}>
       <div className="verification-container">
         <div className="map-section">
-          <div className="map-top-border">
+          <div onClick={onGoBack} className="map-top-border">
             <FaArrowLeft />
           </div>
           <img
