@@ -1,7 +1,8 @@
 .verification-container {
-    width: 900px;
+    width: 100%;
     margin: auto;
 }
+
 
 .map-top-border {
     display: flex;
@@ -30,17 +31,36 @@
     fill: white;
     cursor: pointer;
 }
-
+/* 
 .map-section {
     position: fixed;
-    width: 900px;
+    width: 100%;
     height: 50vh;
     top: 0;
     left: 0;
     right: 0;
     margin: auto;
     z-index: 2;
+} */
+
+.map-section {
+    position: fixed;
+    height: 50vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 2;
+    width: 100%; /* Default to full width (mobile-first) */
 }
+
+/* Media query for desktop */
+@media (min-width: 768px) {
+    .map-section {
+        width: calc(100% - 400px); /* 200px less for desktop */
+    }
+}
+
 
 .map-image {
     width: 100%;
@@ -77,6 +97,13 @@
     position: relative;
     padding: 50px 0 0 100px;
     top: 30vh;
+}
+
+@media (min-width: 768px) {
+    .details-section {
+        width: calc(100% - 400px); /* 200px less for desktop */
+        margin: auto;
+    }
 }
 
 .detail-item {
