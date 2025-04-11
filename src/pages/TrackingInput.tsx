@@ -1,6 +1,5 @@
 import { useState } from "react";
 import EastCoastLogo from "../assets/EastCoastLogo.png";
-import LegitFishLogoWhite from "../assets/LegitFishLogoWhite.svg";
 import "./TrackingInput.css";
 import { useNavigate } from "react-router-dom";
 
