@@ -42,11 +42,8 @@ const TrackingInput = () => {
       </button>
 
       <p className="trace-poweredby">Trace data powered by</p>
-      <img
-        src={LegitFishLogoWhite}
-        alt="Legit Fish Logo"
-        className="legit-logo"
-      />
+      <p className="seafotr-text-logo">SeaFotr</p>
+
     </div>
   );
 };
